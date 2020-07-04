@@ -1,3 +1,8 @@
+.banner {
+  background-color: rgb(230, 0, 18);
+  color: white;
+}
+
 .footer {
   font-family: 'Bebas Neue', cursive;
 }
@@ -5,6 +10,7 @@
 .heading {
   font-size: 60px;
   font-family: 'Alex Brush', cursive;
+  text-align: center;
 }
 
 .main {
