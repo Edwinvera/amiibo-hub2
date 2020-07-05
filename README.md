@@ -1,7 +1,6 @@
 # Amiibo-Hub
 
-**AmiiboHub** Search for release dates, images and other info on your favorite Nintendo characters. Amiibo's are not only collectible figurines but they are also highly functional, having the ability to unlock features that enhance your gameplay.
-
+_**AmiiboHub** Search for release dates, images and other info on your favorite Nintendo characters. Amiibo's are not only collectible figurines but they are also highly functional, having the ability to unlock features that enhance your gameplay._
 <br>
 
 ### Wireframes
@@ -91,8 +90,6 @@ Sample Query Results:
 
 #### MVP Libraries & Dependencies
 
-> Use this section to list the key supporting libraries and their role in the project.
-
 |   Library    | Description                                |
 | :----------: | :----------------------------------------- |
 |    React     | _Access to components to display features._ |
@@ -104,18 +101,15 @@ Sample Query Results:
 
 ```
 src
-|__ assets/
-      |__ data-tests
-      |__ fonts
-      |__ images
-      |__ wireframes
-|__ components/
-      |__ App.jsx
-      |__ Nav.jsx
-      |__ Amiibo.jsx
-      |__ Footer.jsx
-      |__ Dropdown.jsx
-      |__ Search.jsx
+|__ Img/
+      |__ mario.jpg
+|__ Components/
+      |__ AmiiboData.jsx
+      |__ Explore.jsx
+      |__ GetAmiibo.jsx
+      |__ Movie.jsx
+      |__ Navbar.jsx
+      |__ Tunes.jsx
 ```
 
 <br>
@@ -124,12 +118,12 @@ src
 
 |  Component   |    Type    | state | props | hooks | Description                                |
 | :----------: | :--------: | :---: | :---: | :---: | :----------------------------------------- |
-|     App      |   class    |   y   |   n   |   n   | _Homepage displaying options for search._ |
-|     Nav      |   class    |   n   |   n   |   n   | _Links back to home or other parts of the site._ |
-|    Amiibo    | functional |   n   |   y   |   n   | _Page that displays Amiibo and stats._ |
-|    Footer    |   class    |   n   |   n   |   n   | _Links to different sites relating to nintendo._ |
-|   Dropdown   | functional |   y   |   n   |   n   | _Choice of search (character or game series)._ |
-|    Search    | functional |   y   |   n   |   n   | _Input for specific character or game series._ |
+|     AmiiboData      |   class    |   n   |   y   |   n   | _Subcomponent that holds results from GetAmiibo._ |
+|     Explore      |   functional    |   n   |   n   |   n   | _Links to Nintendo's full aray of games and characters for more exploration._ |
+|    GetAmiibo    | class |   y   |   n   |   n   | _API call and distribution of data._ |
+|    Movie    |   functional    |   n   |   n   |   n   | _Holds embedded YouTube Aiibo trailer._ |
+|   Navbar   | functional |   n   |   n   |   n   | _Important links._ |
+|    Tunes    | functional |   n   |   n   |   n   | _Holds embedded Spotify._ |
 
 <br>
 
@@ -137,12 +131,11 @@ src
 
 | Task             | Priority | Estimated Time  | Time Invested | Actual Time |
 | ---------------- | :------: | :------------:  | :-----------: | :---------: |
-| App              |    H     |     24 hrs      |     0 hrs     |     TBD     |
-| Nav & Footer     |    L     |     3 hrs       |     0 hrs     |     TBD     |
-| Amiibo           |    H     |     24 hrs      |     0 hrs     |     TBD     |
-| Dropdown & Search|    M     |     6 hrs       |     0 hrs     |     TBD     |
-| CSS              |    H     |     12 hrs      |     0 hrs     |     TBD     |
-| TOTAL            |          |     69 hrs      |     0 hrs     |     TBD     |
+| App              |    H     |     24 hrs      |     48 hrs     |     48     |
+| Nav & Footer     |    L     |     3 hrs       |     1 hrs     |     1     |
+| API           |    H     |     24 hrs      |     12 hrs     |     12     |
+| CSS              |    H     |     12 hrs      |     10 hrs     |     10     |
+| TOTAL            |          |     63 hrs      |     71 hrs     |     71 hrs     |
 
 <br>
 
@@ -161,8 +154,23 @@ src
 
 ### Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+_**Use of a Subcomponent** I set up a subcomponent where my API was being called. I wanted to be able to send the data to another component so that it would be eaiser for me to manipulate the container of that data._
+
+```
+<div className="amiibo-data">
+          <div>
+            <AmiiboData
+              name= {this.state.name}
+              aSeries= {this.state.amiiboSeries}
+              gSeries= {this.state.gameSeries}
+              releaseDate= {this.state.release}
+              charImage={this.state.image}
+            />
+          </div>
+        </div>
+      </div>
+```
 
 ### Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution, if you'd like.
+_**Issues and Resolutions** Most of my issues had to di with styling. Flex box continues to feel very tricky and I feel that better planning or wireframing is necessaary prior to laying down code. Google remains to be the undisputed champion of assitance when the going gets tough._
