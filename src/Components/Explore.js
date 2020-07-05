@@ -3,7 +3,7 @@ import React from 'react'
 export default function Explore() {
   return (
     <div className="footer-links">
-      <div>
+      <div className= "footer1">
         <div>
           <a href="https://www.smashbros.com/en_US/" style={{ textDecoration: "none" }}>Super Smash Bros.</a>
         </div>
@@ -23,7 +23,7 @@ export default function Explore() {
           <a href="https://splatoon.nintendo.com/" style={{ textDecoration: "none" }}>Splatoon</a>
         </div>
       </div>
-      <div>
+      <div className= "footer2">
         <div>
           <a href="https://www.pokemon.com/us/" style={{ textDecoration: "none" }}>Pokemon</a>
         </div>

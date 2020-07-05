@@ -38,8 +38,11 @@ function App() {
 
       <footer className= "footer">
         <Explore />
-        <Tunes />
       </footer>
+      
+      <div>
+        <Tunes />
+      </div>
 
     </div>
   );

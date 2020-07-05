@@ -11,19 +11,6 @@ class GetAmiibo extends Component {
     }
   }
 
-  // async componentDidMount() {
-  //   try {
-  //     const amiiboRes = await axios('https://www.amiiboapi.com/api/amiibo/')
-  //     this.setState({
-  //       results: amiiboRes.data.amiibo
-        
-  //     })
-  //     console.log(amiiboRes.data.amiibo)
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
-  // }
-
   handleChange = (event) => {
     this.setState({
       searchText: event.target.value
@@ -42,7 +29,6 @@ class GetAmiibo extends Component {
         release: amiiboChar.data.amiibo[0].release.na,
         image: amiiboChar.data.amiibo[0].image
       })
-      // console.log(amiiboChar, this.state.name, amiiboChar.data.amiibo[0].character)
     } catch (error) {
       console.log("Incorrect spelling or character not recognized!")
     }
