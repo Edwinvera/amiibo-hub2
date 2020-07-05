@@ -51,7 +51,7 @@ class GetAmiibo extends Component {
   render() {
     
     return (
-      <>
+      <div className= "get-results">
         <div>
           <div className="get-amiibo">
             <input type="text" onChange={this.handleChange} placeholder= "Search by Character"/>
@@ -70,7 +70,7 @@ class GetAmiibo extends Component {
             />
           </div>
         </div>
-      </>
+      </div>
     )
   }
 }

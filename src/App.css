@@ -7,6 +7,7 @@
 .api-data {
  display: flex;
  justify-content: center;
+ margin-top: 100px;
 }
 
 .api-text {
@@ -31,10 +32,19 @@ button {
   font-size: large;
   padding: 0.5rem 0.5rem;
   max-width: 25%;
+  margin-top: 50px;
 }
 
 .footer {
   font-family: 'Bebas Neue', cursive;
+  margin-top: 100px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .get-amiibo {
@@ -54,7 +64,8 @@ button {
 input {
   text-align: center;
   border-radius: 3px;
-  max-width: 25%;
+  max-width: 50%;
+  margin-top: 100px;
 }
 
 .main {
@@ -67,9 +78,5 @@ input {
 
 .spotify {
   width: 100%;
-}
-
-ul {
-  list-style: none;
-  text-align: center;
+  margin-top: 25px;
 }
