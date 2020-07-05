@@ -10,22 +10,20 @@ import './App.css';
 function App() {
   
   return (
-    <>
+    <div className= "app">
       
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Bebas+Neue&display=swap');
       </style>
-
-      <div className="banner">
-        <header>
+      
+      <div className="banner"> 
           <h1 className="heading">Amiibo Hub</h1>
             <nav className="nav" >  
-            <Link to="/" style={{ color: "white", textDecoration: "none" }}>Home</Link>
+              <Link to="/" style={{ color: "white", textDecoration: "none" }}>Home</Link>
                 <Navbar />
               <Link to="/movie" style={{color: "white", textDecoration: "none"}}>Trailer</Link>        
-            </nav>
-        </header>
+            </nav> 
       </div>
     
       <main className= "main">
@@ -43,7 +41,7 @@ function App() {
         <Tunes />
       </footer>
 
-    </>
+    </div>
   );
 }
 

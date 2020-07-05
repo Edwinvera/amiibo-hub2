@@ -1,16 +1,60 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.api-data {
+ display: flex;
+ justify-content: center;
+}
+
+.api-text {
+  text-align: center;
+  margin: 0 auto;
+}
+
 .banner {
-  background-color: rgb(230, 0, 18);
+  background-image: url("Img/Mario.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.95;
+}
+
+button {
+  font-family: 'Bebas Neue', cursive;
+  cursor: pointer;
+  border: 1px solid rgb(0, 156, 233);
+  border-radius: 12px;
+  background: rgb(0, 156, 233);
   color: white;
+  font-size: large;
+  padding: 0.5rem 0.5rem;
+  max-width: 25%;
 }
 
 .footer {
   font-family: 'Bebas Neue', cursive;
 }
 
+.get-amiibo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .heading {
   font-size: 60px;
   font-family: 'Alex Brush', cursive;
   text-align: center;
+  color: white;
+  text-align: center;
+}
+
+input {
+  text-align: center;
+  border-radius: 3px;
+  max-width: 25%;
 }
 
 .main {
@@ -21,6 +65,11 @@
   font-family: 'Bebas Neue', cursive;
 }
 
+.spotify {
+  width: 100%;
+}
+
 ul {
   list-style: none;
+  text-align: center;
 }

@@ -51,19 +51,26 @@ class GetAmiibo extends Component {
   render() {
     
     return (
-      <div>
-
-        <input type="text" onChange={this.handleChange} placeholder= "Search by Character"/>
-        <button onClick={this.handleSearch}>Get Amiibo</button>
+      <>
+        <div>
+          <div className="get-amiibo">
+            <input type="text" onChange={this.handleChange} placeholder= "Search by Character"/>
+            <button onClick={this.handleSearch}>Get Amiibo</button>
+          </div>
+        </div>
         
-        <AmiiboData
-          name= {this.state.name}
-          aSeries= {this.state.amiiboSeries}
-          gSeries= {this.state.gameSeries}
-          releaseDate= {this.state.release}
-          charImage={this.state.image}
-        />
-      </div>
+        <div className="amiibo-data">
+          <div>
+            <AmiiboData
+              name= {this.state.name}
+              aSeries= {this.state.amiiboSeries}
+              gSeries= {this.state.gameSeries}
+              releaseDate= {this.state.release}
+              charImage={this.state.image}
+            />
+          </div>
+        </div>
+      </>
     )
   }
 }
