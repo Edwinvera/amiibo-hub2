@@ -121,7 +121,7 @@ src
 |     AmiiboData      |   class    |   n   |   y   |   n   | _Subcomponent that holds results from GetAmiibo._ |
 |     Explore      |   functional    |   n   |   n   |   n   | _Links to Nintendo's full aray of games and characters for more exploration._ |
 |    GetAmiibo    | class |   y   |   n   |   n   | _API call and distribution of data._ |
-|    Movie    |   functional    |   n   |   n   |   n   | _Holds embedded YouTube Aiibo trailer._ |
+|    Movie    |   functional    |   n   |   n   |   n   | _Holds embedded YouTube Amiibo trailer._ |
 |   Navbar   | functional |   n   |   n   |   n   | _Important links._ |
 |    Tunes    | functional |   n   |   n   |   n   | _Holds embedded Spotify._ |
 
@@ -173,4 +173,4 @@ _**Use of a Subcomponent** I set up a subcomponent where my API was being called
 
 ### Code Issues & Resolutions
 
-_**Issues and Resolutions** Most of my issues had to di with styling. Flex box continues to feel very tricky and I feel that better planning or wireframing is necessaary prior to laying down code. Google remains to be the undisputed champion of assitance when the going gets tough._
+_**Issues and Resolutions** Most of my issues had to do with styling. Flex box continues to feel very tricky and I feel that better planning or wireframing is necessaary prior to laying down code. Google remains to be the undisputed champion of assitance when the going gets tough._
